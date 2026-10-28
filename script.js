@@ -117,6 +117,7 @@ let running = true;
 document.getElementById("myBtn").addEventListener('click', function () {
     if (running) {
         clearInterval(timer);
+        document.getElementById("myTimer").innerHTML = "Start";
     }
     else {
         start = new Date().getTime();
